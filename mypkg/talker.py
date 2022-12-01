@@ -1,22 +1,20 @@
 #!/usr/bin/python3
 # SPDX-FileCopyrightText: 2022 Yuto Sasaki
 # SPDX-License-Identifier: BSD-3-Clause
-import rclpy
-from rclpy.node import Node
-from person_msgs.msg import Person
+import rclpy                     #ROS2のクライアントのためのライブラリ
+from rclpy.node import Node      #ノードを実装するためのNodeクラス（クラスは第10回で）
+from std_msgs.msg import Int16   #通信の型（16ビットの符号付き整数）
 
 rclpy.init()
-node = Node("talker")
-pub = node.create_publisher(Person, "person", 10)
-n = 0
-
-def cb():
-    global n
-    msg = Person()
-    msg.name = "Yuto sasaki"
-    msg.age = n
-    pub.publish(msg)
+node = Node("talker")            #ノード作成（nodeという「オブジェクト」を作成）
+pub = node.create_publisher(Int16, "countup", 10)   #パブリッシャのオブジェクト作成
+n = 0 #カウント用変数
+def cb():          #17行目で定期実行されるコールバック関数
+    global n       #関数を抜けてもnがリセットされないようにしている
+    msg = Int16()  #メッセージの「オブジェクト」
+    msg.data = n   #msgオブジェクトがdataという変数を持っているのでそこにnを代入
+    pub.publish(msg)        #メッセージ送信
     n += 1
 
-node.create_timer(0.5, cb)
-rclpy.spin(node)
+node.create_timer(0.5, cb)  #タイマー設定
+rclpy.spin(node)            #実行（無限ループ）
