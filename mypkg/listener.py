@@ -3,7 +3,7 @@
 # SPDX-License-Identifier: BSD-3-Clause
 import rclpy
 from rclpy.node import Node
-from std_msgs.msg import Person
+from person_msgs.msg import Person
 
 def cb(msg):
     global node
