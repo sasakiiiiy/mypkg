@@ -12,16 +12,19 @@ setup(
         ('share/ament_index/resource_index/packages',
             ['resource/' + package_name]),
         ('share/' + package_name, ['package.xml']),
-        (os.path.join('share', package_name), glob('launch/*.launch.py'))   ],
+        (os.path.join('share', package_name), glob('launch/*.launch.py'))   
+     ],
     install_requires=['setuptools'],
     zip_safe=True,
-    maintainer='sasaki',
-    maintainer_email='s21c1053mt@s.chibakoudai.jp',
+    maintainer='Ryuichi Ueda',
+    maintainer_email='ryuichiueda@gmail.com',
     description='a package for practice',
     license='BSD-3-Clause',
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'talker = mypkg.talker:main', 'listener = mypkg.listener:main', ],
+            'talker = mypkg.talker:main', 
+            'listener = mypkg.listener:main',
+         ],
     },
 )
