@@ -5,6 +5,7 @@
 ノードを実行して、listenerが出力するべき行を探すコマンド。
 ## 必要なソフトウェア
 * ROS2
+* Python
 ## talk＿listen.launch.pyコマンドの使用方法
 1. ubuntuを開く
 2. ROS2をインストールする
