@@ -11,7 +11,7 @@
 2. ROS2をインストールする
 3. gitコマンドを用いてローカル環境にmypkgリポジトリをクローンする
 ```bash
-git clone git@github.com:sasakiiiiy/mypkg.git
+git clone https://github.com/sasakiiiiy/mypkg.git
 ```
 4. ros2_wsディレクトリに移動する
 ```bash
