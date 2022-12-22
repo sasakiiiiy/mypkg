@@ -1,8 +1,8 @@
-# mypkg
-# talk_listen.launch.pyコマンド
+# mypkgリポジトリにはtalker.pyとlistener.pyを一度に立ち上げるtalk_listen.launch.pyコマンドが含まれている
+# talk_listen.launch.pyコマンドの概要
 ![test](https://github.com/sasakiiiiy/mypkg/actions/workflows/test.yml/badge.svg)
-## 何をするためのソフトか？
-ノードを実行して、listenerが出力するべき行を探すコマンド。
+## talk_listen.launch.pyの説明
+パブリッシャを持つノードのtalker.pyコマンドによって、16ビットの符号付き整数が型であるメッセージをカウントしてトピックを通じて送信し、サブスクライバを持つノードのlistener.pyコマンドで受信して表示させるコマンド
 ## 必要なソフトウェア
 * ROS2
 * Python
