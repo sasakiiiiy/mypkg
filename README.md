@@ -1,4 +1,4 @@
-# ROS2のパッケージであるmypkgにはtalker.pyとlistener.pyを一度に立ち上げるtalk_listen.launch.pyコマンドが含まれている
+# ROS2のパッケージ"mypkg"に含まれているtalk_listen.launch.pyコマンドについて
 # talk_listen.launch.pyコマンドの概要
 ![test](https://github.com/sasakiiiiy/mypkg/actions/workflows/test.yml/badge.svg)
 ## talk_listen.launch.pyコマンドの説明
