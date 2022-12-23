@@ -1,4 +1,5 @@
-# ROS2のプログラムの配布単位であるパッケージ"mypkg"のリポジトリ
+# mypkg
+ROS2を学習するためのリポジトリである
 # talk_listen.launch.pyコマンドの概要
 ![test](https://github.com/sasakiiiiy/mypkg/actions/workflows/test.yml/badge.svg)
 ## talk_listen.launch.pyコマンドの説明
