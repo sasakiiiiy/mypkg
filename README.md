@@ -22,6 +22,7 @@ cd ~/ros2_ws
 ros2 launch mypkg talk_listen.launch.py
 ```
 6. 実行例
+
 [INFO] [launch]: All log files can be found below /home/sasaki/.ros/log/2022-12-23-15-14-59-245522-DESKTOP-2HHRNAC-7434
 [INFO] [launch]: Default logging verbosity is set to INFO
 [INFO] [talker-1]: process started with pid [7436]
