@@ -9,7 +9,7 @@
 * ROS2
 * Python
 ## talk_listen.launch.pyコマンドの使用方法
-1. ubuntuを開く
+1. Ubuntuを開く
 2. ROS2をインストールする
 3. gitコマンドを用いてローカル環境にmypkgリポジトリをクローンする
 ```bash
