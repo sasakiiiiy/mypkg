@@ -44,5 +44,5 @@ ros2 launch mypkg talk_listen.launch.py
 * Ubuntu
   * 22.04
 ## その他
-* このソフトウェアパッケージは、3条項BSDライセンスの下、再配布および使用が許可されます。
+* このソフトウェアパッケージは，3条項BSDライセンスの下，再頒布および使用が許可されます．
 * ©　2022 Yuto Sasaki
