@@ -1,5 +1,5 @@
 # mypkg
-* ROS2を学習するためのリポジトリである
+* ロボットシステム学講義用のリポジトリである
 * このリポジトリはROS2のパッケージである
 # talk_listen.launch.pyコマンドの概要
 ![test](https://github.com/sasakiiiiy/mypkg/actions/workflows/test.yml/badge.svg)
