@@ -5,7 +5,7 @@
 # talk_listen.launch.pyコマンドの概要
 ![test](https://github.com/sasakiiiiy/mypkg/actions/workflows/test.yml/badge.svg)
 ## talk_listen.launch.pyコマンドの説明
-パブリッシャを持つノードのtalker.pyコマンドによって、数字をカウントしてトピックを通じて送信し、サブスクライバ-を持つノードのlistener.pyコマンドで受信して表示させるコマンド
+パブリッシャを持つノードのtalker.pyコマンドによって数字をカウントして、パブリッシャとサブスクライバーを連結させるデータの流路であるトピックを通じて送信し、サブスクライバーを持つノードのlistener.pyコマンドで受信して表示させるコマンド
 ## 必要なソフトウェア
 * ROS2
 * Python
