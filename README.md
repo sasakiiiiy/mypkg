@@ -1,6 +1,7 @@
 # mypkg
 * ロボットシステム学講義用のリポジトリである
 * このリポジトリはROS2のパッケージである
+
 ![test](https://github.com/sasakiiiiy/mypkg/actions/workflows/test.yml/badge.svg)
 ## talker.py
 パブリッシャを持つノードであり、0から数字をカウントしてトピック(countup)を通じてlistener.pyに送信する
