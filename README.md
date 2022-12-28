@@ -17,6 +17,7 @@ $ git clone https://github.com/sasakiiiiy/mypkg.git
 ```
 3. 端末を二つ開く
 4. 実行コマンドを入力する
+
 端末1
 ```bash
 $ ros2 run mypkg talker　
