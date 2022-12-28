@@ -1,30 +1,64 @@
 # mypkg
 * ロボットシステム学講義用のリポジトリである
-* このリポジトリはtalk_listen.launch.pyコマンドが含まれている
 * このリポジトリはROS2のパッケージである
-# talk_listen.launch.pyコマンドの概要
 ![test](https://github.com/sasakiiiiy/mypkg/actions/workflows/test.yml/badge.svg)
-## talk_listen.launch.pyコマンドの説明
-パブリッシャを持つノードのtalker.pyコマンドによって数字をカウントして、パブリッシャとサブスクライバーを連結させるデータの流路であるトピックを通じて送信し、サブスクライバーを持つノードのlistener.pyコマンドで受信して表示させるコマンド
+## talker.py
+パブリッシャを持つノードであり、0から数字をカウントしてトピック(countup)を通じてlistener.pyに送信する
+## listener.py
+サブスクライバを持つノードであり、トピック(countup)を通じてtalker.pyでカウントした数字を標準出力で出力する
 ## 必要なソフトウェア
 * ROS2
-## talk_listen.launch.pyコマンドの使用方法
+## 実行手順1
 1. Ubuntuを開く
-2. ROS2をインストールする
-3. gitコマンドを用いてローカル環境にmypkgリポジトリをクローンする
+2. gitコマンドを用いてローカル環境にmypkgリポジトリをクローンする
 ```bash
-git clone https://github.com/sasakiiiiy/mypkg.git
+$ git clone https://github.com/sasakiiiiy/mypkg.git
 ```
-4. ros2_wsディレクトリに移動する
+3. 端末を二つ開く
+4. 実行コマンドを入力する
+端末1
 ```bash
-cd ~/ros2_ws
+$ ros2 run mypkg talker　
 ```
-5. 実行コマンドを入力する
+端末2
 ```bash
-ros2 launch mypkg talk_listen.launch.py
+$ ros2 run mypkg listener　
 ```
-6. 実行例
 
+5. 実行例
+[INFO] [1672229123.345788640] [listener]: Listen: 0
+
+[INFO] [1672229123.798582293] [listener]: Listen: 1
+
+[INFO] [1672229124.298567609] [listener]: Listen: 2
+
+[INFO] [1672229124.797972776] [listener]: Listen: 3
+
+[INFO] [1672229125.297727952] [listener]: Listen: 4
+
+[INFO] [1672229125.797026237] [listener]: Listen: 5
+
+[INFO] [1672229126.297816656] [listener]: Listen: 6
+
+[INFO] [1672229126.797432847] [listener]: Listen: 7
+
+[INFO] [1672229127.298248778] [listener]: Listen: 8
+
+[INFO] [1672229127.797516712] [listener]: Listen: 9
+
+[INFO] [1672229128.297434582] [listener]: Listen: 10
+
+## 実行手順2
+1. Ubuntuを開く
+2. gitコマンドを用いてローカル環境にmypkgリポジトリをクローンする
+```bash
+$ git clone https://github.com/sasakiiiiy/mypkg.git
+```
+3. 実行コマンドを入力する
+```bash
+ $ ros2 launch mypkg talk_listen.launch.py
+```
+4. 実行例
 [INFO] [launch]: All log files can be found below /home/sasaki/.ros/log/2022-12-23-15-14-59-245522-DESKTOP-2HHRNAC-7434
 
 [INFO] [launch]: Default logging verbosity is set to INFO
