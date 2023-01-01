@@ -8,8 +8,10 @@
 * ROS2
 ## 機能
 * talker.py
+
 パブリッシャを持つノードであり、0から数字をカウントしてトピック(countup)を通じてlistener.pyに送信する
 * listener.py
+
 サブスクライバを持つノードであり、トピック(countup)を通じてtalker.pyでカウントした数字を標準出力で出力する
 ## ダウンロード方法
 gitコマンドを用いてローカル環境にmypkgリポジトリをクローンする
@@ -57,6 +59,7 @@ $ ros2 run mypkg listener　
 ## 実行例2
 
 * talk_listen.launch.py
+
 talker.pyとlistener.pyを1つの実行コマンドで実行させることができるもの
 
 1. 実行コマンドを入力する
