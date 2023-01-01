@@ -1,33 +1,36 @@
 # mypkg
 * ロボットシステム学講義用のリポジトリである
 * このリポジトリはROS2のパッケージである
+* このリポジトリにはtalker.py,listener.py,talk_listen.launch.pyが含まれている
 
 ![test](https://github.com/sasakiiiiy/mypkg/actions/workflows/test.yml/badge.svg)
-## talker.py
-パブリッシャを持つノードであり、0から数字をカウントしてトピック(countup)を通じてlistener.pyに送信する
-## listener.py
-サブスクライバを持つノードであり、トピック(countup)を通じてtalker.pyでカウントした数字を標準出力で出力する
 ## 必要なソフトウェア
 * ROS2
-## 実行手順1
-1. Ubuntuを開く
-2. gitコマンドを用いてローカル環境にmypkgリポジトリをクローンする
+## 機能
+* talker.py
+パブリッシャを持つノードであり、0から数字をカウントしてトピック(countup)を通じてlistener.pyに送信する
+* listener.py
+サブスクライバを持つノードであり、トピック(countup)を通じてtalker.pyでカウントした数字を標準出力で出力する
+## ダウンロード方法
+gitコマンドを用いてローカル環境にmypkgリポジトリをクローンする
 ```bash
 $ git clone https://github.com/sasakiiiiy/mypkg.git
 ```
-3. 端末を二つ開く
-4. 実行コマンドを入力する
+## 実行例1
+1. 端末を二つ開く
+2. 実行コマンドを入力する
 
 端末1
 ```bash
-$ ros2 run mypkg talker　
+$ ros2 run mypkg talker
 ```
+
 端末2
 ```bash
 $ ros2 run mypkg listener　
 ```
 
-5. 実行例
+3. 実行(端末2に出力される)
 
 [INFO] [1672229123.345788640] [listener]: Listen: 0
 
@@ -51,17 +54,17 @@ $ ros2 run mypkg listener　
 
 [INFO] [1672229128.297434582] [listener]: Listen: 10
 
-## 実行手順2
-1. Ubuntuを開く
-2. gitコマンドを用いてローカル環境にmypkgリポジトリをクローンする
-```bash
-$ git clone https://github.com/sasakiiiiy/mypkg.git
-```
-3. 実行コマンドを入力する
+## 実行例2
+
+* talk_listen.launch.py
+talker.pyとlistener.pyを1つの実行コマンドで実行させることができるもの
+
+1. 実行コマンドを入力する
+
 ```bash
  $ ros2 launch mypkg talk_listen.launch.py
 ```
-4. 実行例
+2. 実行
 
 [INFO] [launch]: All log files can be found below /home/sasaki/.ros/log/2022-12-23-15-14-59-245522-DESKTOP-2HHRNAC-7434
 
