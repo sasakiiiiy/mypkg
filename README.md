@@ -13,11 +13,6 @@
 * listener.py
 
 サブスクライバを持つノードであり、トピック(countup)を通じてtalker.pyでカウントした数字を標準出力で出力する
-## ダウンロード方法
-gitコマンドを用いてローカル環境にmypkgリポジトリをクローンする
-```bash
-$ git clone https://github.com/sasakiiiiy/mypkg.git
-```
 ## 実行例1
 1. 端末を二つ開く
 2. 実行コマンドを入力する
